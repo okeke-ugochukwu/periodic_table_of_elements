@@ -1,1 +1,227 @@
 @import './resets';
+
+//class color pallete for elements
+$alkali_metals: #F9E2AE;
+.alkali_metals {
+    background: $alkali_metals;
+}
+
+$alkali_earth_metals: #F8C596;
+.alkali_earth_metals {
+    background: $alkali_earth_metals;
+}
+
+$transition_metals: #CDC2E0;
+.transition_metal {
+    background: $transition_metals;
+}
+
+$halogens: #B2D8C1;
+.halogens {
+    background: $halogens;
+}
+$noble_gases: #FFFFFF;
+.noble_gases {
+    background: $noble_gases;
+}
+
+$actinoid_elements: #BEE4F7;
+.actioids {
+    background: $actinoid_elements;
+}
+
+$rare_earth_elemnts_lanathanoids: #E9EBA9;
+.rare_earth {
+    background: $rare_earth_elemnts_lanathanoids;
+}
+
+$other_metals: #EFD2D7;
+.other_metals {
+    background-color: $other_metals;
+}
+
+$other_non_metals: #EDAB88;
+.other_non_metals {
+    background-color: $other_non_metals;
+}
+
+//dimentions and layout
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    // outline: 1px solid tomato;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+main {
+    height: 100%;
+}
+main, header, section {
+    width: 100%;
+}
+header {
+    @include flexCenter();
+    height: 9%;
+    text-align: center;
+}
+
+
+section:nth-child(2) {
+    @include flexCenter();
+    flex-direction: column;
+    height: 79%;
+    
+    &>div {
+        width: max-content
+    }
+}
+
+//main elements
+.main_elements_tb {
+    height: max-content;
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(19, 50px);
+    grid-template-rows: repeat(8, 50px);
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.main_elements_tb,
+.other_elements_tb {
+    font-size: 12px;
+}
+
+.cell {
+    position: relative;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+.element_number {
+    width: max-content;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+}
+.element_number,
+.element_name {
+    font-weight: 700;
+
+}
+.element_name {
+    position: absolute;
+    bottom: 3px;
+    font-size: 2em;
+}
+#group_tag,
+#period_tag,
+.top_numbering,
+.empty {
+    border: none;
+}
+#period_tag {
+    div {
+        display: flex;
+        transform: rotate(-90deg);
+        align-items: end;
+    }
+}
+#group_tag {
+    div {
+        position: absolute;
+    }
+
+    div:nth-child(2) {
+        bottom: 0;
+    }
+}
+
+
+//other elements, arctinoids and lanthanonids
+.other_elements_tb {
+    margin-left: 30px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 185px auto;
+    height: max-content;
+
+    &>div {
+        display: grid;
+    }
+
+    &>div:first-child {
+        display: grid;
+        grid-template-columns: 125px 50px;
+        gap: 5px;
+    }
+
+    &>div:nth-child(2) {
+       
+        grid-template-columns: repeat(14, 50px);
+        grid-template-rows: repeat(2, 50px);
+        gap: 5px;
+
+
+    }
+}
+
+.row_tag {
+    font-weight: 500;
+    justify-content: end;
+    align-items: center;
+    text-align: end;
+}
+.row_tag,
+.side_numbering {
+    border: none;
+}
+.side_numbering {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.top_numbering {
+    display: flex;
+    align-items: end;
+}
+
+
+
+section:nth-child(3) {
+    @include flexCenter();
+
+    height: 12%;
+    width: 100%;
+    border: 1px solid gery;
+    
+    &>div {
+        @include flexCenter();
+        justify-content: space-evenly;
+        height: 100%;
+        width: 75%;
+
+        div:nth-child(odd) {
+            width: 20px;
+            height: 20px ;
+            border: 2px solid black;
+        }
+        div:nth-child(even) {
+            font-size: 12px;
+            width: 60px;
+        }
+        div:nth-child(14) {
+            width: max-content;
+        }
+    }
+    
+}
+
+
