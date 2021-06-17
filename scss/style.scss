@@ -12,7 +12,7 @@ $alkali_earth_metals: #F8C596;
 }
 
 $transition_metals: #CDC2E0;
-.transition_metal {
+.transition_metals {
     background: $transition_metals;
 }
 
@@ -45,12 +45,13 @@ $other_non_metals: #EDAB88;
     background-color: $other_non_metals;
 }
 
-//dimentions and layout
 @mixin flexCenter {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+//dimentions and layout
 
 * {
     // outline: 1px solid tomato;
@@ -70,9 +71,10 @@ header {
     @include flexCenter();
     height: 9%;
     text-align: center;
+    border-bottom: 1px solid black;
 }
 
-
+//main periodic table
 section:nth-child(2) {
     @include flexCenter();
     flex-direction: column;
@@ -191,13 +193,12 @@ section:nth-child(2) {
 }
 
 
-
+//key
 section:nth-child(3) {
     @include flexCenter();
 
     height: 12%;
     width: 100%;
-    border: 1px solid gery;
     
     &>div {
         @include flexCenter();

@@ -28,7 +28,7 @@ html {
   background: #F8C596;
 }
 
-.transition_metal {
+.transition_metals {
   background: #CDC2E0;
 }
 
@@ -81,6 +81,7 @@ header {
           justify-content: center;
   height: 9%;
   text-align: center;
+  border-bottom: 1px solid black;
 }
 
 section:nth-child(2) {
@@ -267,7 +268,6 @@ section:nth-child(3) {
           justify-content: center;
   height: 12%;
   width: 100%;
-  border: 1px solid gery;
 }
 
 section:nth-child(3) > div {
