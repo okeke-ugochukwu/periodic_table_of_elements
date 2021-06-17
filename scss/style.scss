@@ -58,7 +58,6 @@ $other_non_metals: #EDAB88;
 
 
 //dimentions and layout
-
 * {
     // outline: 1px solid tomato;
 }
@@ -112,6 +111,9 @@ section:nth-child(2) {
     border: 2px solid black;
     display: flex;
     justify-content: center;
+    &:hover {
+        transform: scale(1.08);
+    }
 }
 .element_number {
     width: max-content;

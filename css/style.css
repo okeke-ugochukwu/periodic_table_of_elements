@@ -140,6 +140,11 @@ section:nth-child(2) > div {
           justify-content: center;
 }
 
+.cell:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
 .element_number {
   width: -webkit-max-content;
   width: -moz-max-content;
