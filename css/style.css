@@ -186,15 +186,15 @@ section:nth-child(2) > div {
 }
 
 .other_elements_tb {
-  margin-left: 30px;
   display: -ms-grid;
   display: grid;
   gap: 5px;
-  -ms-grid-columns: 185px auto;
-      grid-template-columns: 185px auto;
+  -ms-grid-columns: 130px auto;
+      grid-template-columns: 130px auto;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  margin-left: -23px;
 }
 
 .other_elements_tb > div {
@@ -205,8 +205,8 @@ section:nth-child(2) > div {
 .other_elements_tb > div:first-child {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 125px 50px;
-      grid-template-columns: 125px 50px;
+  -ms-grid-columns: 75px 50px;
+      grid-template-columns: 75px 50px;
   gap: 5px;
 }
 

@@ -147,11 +147,11 @@ section:nth-child(2) {
 
 //other elements, arctinoids and lanthanonids
 .other_elements_tb {
-    margin-left: 30px;
     display: grid;
     gap: 5px;
-    grid-template-columns: 185px auto;
+    grid-template-columns: 130px auto;
     height: max-content;
+    margin-left: -23px;
 
     &>div {
         display: grid;
@@ -159,17 +159,14 @@ section:nth-child(2) {
 
     &>div:first-child {
         display: grid;
-        grid-template-columns: 125px 50px;
+        grid-template-columns: 75px 50px;
         gap: 5px;
     }
 
     &>div:nth-child(2) {
-       
         grid-template-columns: repeat(14, 50px);
         grid-template-rows: repeat(2, 50px);
         gap: 5px;
-
-
     }
 }
 
