@@ -303,3 +303,51 @@ section:nth-child(3) > div div:nth-child(14) {
   width: -moz-max-content;
   width: max-content;
 }
+
+.no_mobile_mssg {
+  display: none;
+}
+
+@media only screen and (max-width: 1092px) {
+  main {
+    display: none;
+  }
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .no_mobile_mssg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px 40px;
+    width: 80%;
+    max-width: 300px;
+    height: 200px;
+    text-align: center;
+    border: 2px solid black;
+    background: linear-gradient(140deg, #5a0169, pink);
+    -webkit-box-shadow: 0px 0px 50px #5a0169;
+            box-shadow: 0px 0px 50px #5a0169;
+  }
+  .no_mobile_mssg img {
+    width: 50px;
+  }
+}
